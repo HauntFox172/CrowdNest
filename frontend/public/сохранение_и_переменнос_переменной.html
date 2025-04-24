@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница с полем ввода и кнопкой</title>
+    <style>        #output {
+            white-space: pre-wrap;}</style>
+</head>
+<body>
+
+    <h1>Введите описание проекта</h1>
+
+    <label for="myDescription">Описание:</label><br>
+    <textarea id="myDescription" name="myDescription" rows="10" cols="50"></textarea>
+
+    <button id="showButton">Показать описание</button>
+    <img id="Foto" src="https://cdn.fishki.net/upload/post/2017/01/05/2183399/14-1.jpg" width="100" height="100" alt="ara"></img>
+
+    <p>Описание проекта будет здесь: <span id="output"></span></p>
+
+    <script>
+        const Foto = document.getElementById("Foto")
+        const descriptionElement = document.getElementById("myDescription");
+        const outputElement = document.getElementById("output");
+        const showButton = document.getElementById("showButton");
+        let descriptionValue = ``; 
+
+        descriptionElement.addEventListener("input", function(event) {
+            descriptionValue = event.target.value; // Сохраняем описание проекта в переменную
+        });
+
+        showButton.addEventListener("click", function() {
+            outputElement.textContent = descriptionValue;
+            //Отображение перееременной как описание проекта то есть это проверка на отображение что переменная изменена
+            // кроме того она используется на уровне локального пользователя поэтому её можноо использовать как добавление к описанию самой идеи на краундфантинг платформе до её добавления
+        });
+    </script>
+
+</body>
+</html>
