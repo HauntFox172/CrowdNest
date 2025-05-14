@@ -20,7 +20,7 @@ html {
     margin-right: auto;
 }
 
-.add-proj-button {
+#add-proj-btn {
     position: fixed;
 
     height: 100px;
@@ -45,15 +45,25 @@ html {
     align-items: center;
 }
 
-.add-proj-button:hover {
+.add-proj-btn:hover {
     background-color: #3ab336;
     color: white;
 }
 
 .project {
-    padding: 10px;
+    display: flex;
 
-    border-radius: 50px;
+    flex-direction: column;
+
+    margin: 50px auto;
+    padding: 20px;
+
+    width: 95%;
+    height: auto;
+
+    box-sizing: border-box;
+
+    border-radius: 20px;
 
     background-color: white;
 }

@@ -14,7 +14,17 @@
 
     <div id="projects"></div>
 
-    <button class="add-proj-button" href="#">+</button>
+    <div id="add-proj-wnd">
+        <span id="close-add-proj-btn">X</span>
+        <form id="add-proj-form">
+            <input type="image" name="image">
+            <input type="text" placeholder="Название" name="headline" required>
+            <textarea placeholder="Описание" name="description" required></textarea>
+            <button type="submit">Опубликовать</button>
+        </form>
+    </div>
+
+    <button id="add-proj-btn">+</button>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
