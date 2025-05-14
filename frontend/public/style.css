@@ -20,36 +20,34 @@ html {
     margin-right: auto;
 }
 
-.add-project-button {
-    border: none;
-    background: none;
-
-    display: flex;
-
+.rnd-button {
     position: fixed;
 
-    right: 20px;
+    height: 100px;
+    width: 100px;
+
     bottom: 20px;
+    right: 20px;
 
-    transition: transform 0.2;
-}
+    border-radius: 50%;
+    border: none;
 
-.add-project-button:hover{
+    background-color: #39a84e;
+
     cursor: pointer;
+
+    font-size: 80px;
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.circle-background {
-    
+.rnd-button:hover {
+    background-color: #3ab336;
+    color: white;
 }
 
-.circle-background:hover {
-    fill: #91d654;
-}
 
-.button-text {
-
-}
-
-.button-text:hover {
-    fill: white;
-}
