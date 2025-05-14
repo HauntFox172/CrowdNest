@@ -20,7 +20,7 @@ html {
     margin-right: auto;
 }
 
-.rnd-button {
+.add-proj-button {
     position: fixed;
 
     height: 100px;
@@ -45,9 +45,15 @@ html {
     align-items: center;
 }
 
-.rnd-button:hover {
+.add-proj-button:hover {
     background-color: #3ab336;
     color: white;
 }
 
+.project {
+    padding: 10px;
 
+    border-radius: 50px;
+
+    background-color: white;
+}
