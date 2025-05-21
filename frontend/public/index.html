@@ -16,11 +16,11 @@
 
     <div id="add-proj-wnd">
         <form id="add-proj-form">
-            <button id="close-add-proj-btn">X</button>
+            <button id="close-add-proj-btn">&#10006;</button>
             <div class="add-proj-content">
                 <input class="proj-img" type="file" accept="image/*" name="image" value=" ">
-                <input class="proj-headline" type="text" placeholder="Название" name="headline">
-                <textarea class="proj-desc" placeholder="Описание" name="description"></textarea>
+                <input class="proj-headline" type="text" placeholder="Название" name="headline" required>
+                <textarea class="proj-desc" placeholder="Описание" name="description" style="resize: none"></textarea>
                 <button class="proj-publish-btn" type="submit">Опубликовать</button>
             </div>
         </form>
