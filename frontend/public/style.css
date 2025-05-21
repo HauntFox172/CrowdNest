@@ -7,8 +7,6 @@ html {
 }
 
 .header {
-    display: flex;
-
     background-color: white;
 }
 
@@ -23,6 +21,10 @@ html {
 #add-proj-btn {
     position: fixed;
 
+    justify-content: center;
+    align-items: center;
+
+    /* TODO: response to screen */
     height: 100px;
     width: 100px;
 
@@ -39,13 +41,9 @@ html {
     font-size: 80px;
 
     color: black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.add-proj-btn:hover {
+#add-proj-btn:hover {
     background-color: #3ab336;
     color: white;
 }
@@ -81,6 +79,8 @@ html {
     align-items: center;
 
     background: rgba(0, 0, 0, 0.5);
+
+    display: none;
 }
 
 #add-proj-form {
