@@ -15,12 +15,14 @@
     <div id="projects"></div>
 
     <div id="add-proj-wnd">
-        <span id="close-add-proj-btn">X</span>
         <form id="add-proj-form">
-            <input type="image" name="image">
-            <input type="text" placeholder="Название" name="headline" required>
-            <textarea placeholder="Описание" name="description" required></textarea>
-            <button type="submit">Опубликовать</button>
+            <button id="close-add-proj-btn">&#10006;</button>
+            <div class="add-proj-content">
+                <input class="proj-img" type="file" accept="image/*" name="image" value=" ">
+                <input class="proj-headline" type="text" placeholder="Название" name="headline" required>
+                <textarea class="proj-desc" placeholder="Описание" name="description" style="resize: none"></textarea>
+                <button class="proj-publish-btn" type="submit">Опубликовать</button>
+            </div>
         </form>
     </div>
 

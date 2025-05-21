@@ -17,7 +17,7 @@ async function loadProjects() {
     // Fetch json array and put it in html
     const container = document.getElementById(`projects`);
     container.innerHTML = projects.map(project =>
-        <div class="project">
+        `<div class="project">
             <img></img>
             <div class="prj-info">
                 <h3>${project.title}</h3>
@@ -26,10 +26,11 @@ async function loadProjects() {
                     ♥
                 </button>
             </div>
-        </div>
+        </div>`
     ).join('');
 }
 
+// Activate when submit form
 document.getElementById(`add-proj-form`).addEventListener(`submit`, async (e) => {
     // Prevent submitting
     e.preventDefault();
